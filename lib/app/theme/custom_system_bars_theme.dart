@@ -89,19 +89,19 @@ class CustomSystemBarsTheme {
       originalCallback?.call();
       final themeMode = await providerContainer.read(themeModeNotifierProvider.future);
       if (themeMode == ThemeMode.system) {
-        setSystemBarsTheme(brightness: PlatformDispatcher.instance.platformBrightness);
+        await setSystemBarsTheme(brightness: PlatformDispatcher.instance.platformBrightness);
       }
     };
 
     // HotFix for API 28, that need SystemBarsTheme applied on each app resume!
     if (AppPlatform.isAndroid) {
-      final AndroidDeviceInfo androidInfo = await DeviceInfoPlugin().androidInfo;
+      final AndroidDeviceInfo androidInfo = Configuration.instance.androidDeviceInfo!;
       if (androidInfo.version.sdkInt == 28) {
         SystemChannels.lifecycle.setMessageHandler((msg) async {
           if (msg == AppLifecycleState.resumed.toString()) {
             final themeMode = await providerContainer.read(themeModeNotifierProvider.future);
             if (themeMode == ThemeMode.system) {
-              setSystemBarsTheme(brightness: PlatformDispatcher.instance.platformBrightness);
+              await setSystemBarsTheme(brightness: PlatformDispatcher.instance.platformBrightness);
             }
           }
           return Future.value(msg);
