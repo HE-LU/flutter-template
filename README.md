@@ -1,3 +1,21 @@
+![LOGO](docs/flutter_template.jpg)
+
+<div align="center">
+
+[![Flutter](https://img.shields.io/badge/Flutter-3.32-blue)](#)
+[![Dart](https://img.shields.io/badge/Dart-3.6.0-blue)](#)
+[![License](https://img.shields.io/github/license/HE-LU/flutter-template)](LICENSE)
+
+</div>
+
+<div align="center">
+
+[![CodeCheck](https://github.com/HE-LU/flutter-template/actions/workflows/flutter_project_codecheck_android.yml/badge.svg)](https://github.com/HE-LU/flutter-template/actions/workflows/flutter_project_codecheck_android.yml)
+[![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/HE-LU/flutter-template?utm_source=oss&utm_medium=github&utm_campaign=HE-LU%2Fflutter-template&labelColor=171717&color=FF570A)](#)
+
+</div>
+
+
 # Flutter Template
 - [Project notes](#project-notes)
 
@@ -58,7 +76,7 @@
 <!-- ################################################## -->
 # Project notes
 
-- Notes that could be benefitial to know during the development. 
+- Notes that could be beneficial to know during the development. 
 - For example list of test accounts, required credentials, steps required to get testing account, etc.
 
 
@@ -175,7 +193,7 @@ You can read about flavors setup in the following tutorials:
 - 🖥️ [Linux](https://docs.flutter.dev/deployment/linux) - Flavors are not supported yet.
 
 In case of using firebase with multiple flavors, you have to:
-- for iOS add custom build run script phase and copy appropriate `GoogleService-Info.plist` file. It's already prepared, you just need to uncomment it and add appropriate plists to destinations according to the script.
+- for iOS add custom build run script phase and copy appropriate `GoogleService-Info.plist` file. It's already prepared, you just need to uncomment it and add appropriate `plists` to destinations according to the script.
 
 For Google sign in:
 - for iOS, you have to copy value from `REVERSED_CLIENT_ID` from `GoogleService-Info.plist` into `GOOGLE_REVERSED_CLIENT_ID` in build settings.
@@ -189,7 +207,7 @@ For Google sign in:
 - As we are using flavors, we have to specify which flavor to build using `--flavor` argument, and also select a correct main file using `-t` argument.
 - One of the arguments you should use is `--obfuscate`. This makes reverse engineering harder. This has to be used also with `--split-debug-info` which should make the app smaller, and also specify the directory where the mapping file to read obfuscated stack trace is stored.
 - Optional step is to include precompiled Shaders. To do that you have to first [Precompile Shaders](#precompiling-shaders) and add `--bundle-sksl-path` argument.
-- In case we would like to build a Debugable version of the app, we have to add `--debug` argument.
+- In case we would like to build a Debuggable version of the app, we have to add `--debug` argument.
 
 Here is an example of assembling an Android app bundle using all the commands:
 ```
@@ -339,7 +357,7 @@ This way we are ensuring that at least the Android version is buildable. We are 
 ## Theming
 Theming is done inside `lib/core/themes/app_theme.dart`. Currently, we suggest using Material 3. The main setup is done in file `app_theme.dart`.
 
-The main idea right now is to overwrite the whole `colorScheme` with an "undefined" pinkish color and to not use the default theme colorScheme anywhere in the app. Every widget like AppBar, EleveatedButton, TextField, etc. should have a custom implementation starting with the word `Custom` so it is easily recognizable. This Widget then should wrap the appropriate widget, and should utilize colors from `context.colorScheme`, which has an extension method, as is returning our own implementation of `CustomColorScheme`. All colors should be declared there.
+The main idea right now is to overwrite the whole `colorScheme` with an "undefined" pinkish color and to not use the default theme colorScheme anywhere in the app. Every widget like AppBar, ElevatedButton, TextField, etc. should have a custom implementation starting with the word `Custom` so it is easily recognizable. This Widget then should wrap the appropriate widget, and should utilize colors from `context.colorScheme`, which has an extension method, as is returning our own implementation of `CustomColorScheme`. All colors should be declared there.
 
 The most tricky part of theming is to make sure that the app supports Edge-to-Edge, and that it has correct navigation and StatusBar colors set. To make this possible, we had to implement our own `CustomSystemBarsTheme` class. To use it properly, make sure you are calling `setupSystemBarsTheme` during the App startup. In case of the need of overriding the Brightness for a specific screen, there are two approaches. First, the simple one is to just use `CustomAppBar`, and set brightness to it. Second, wrap the whole Scaffold inside `CustomSystemBarsThemeWidget` and set Brightness to it.
 <!-- ################################################## -->
