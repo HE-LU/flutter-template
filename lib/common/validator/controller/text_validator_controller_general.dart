@@ -55,7 +55,7 @@ class TextValidatorControllerGeneral extends TextValidatorController {
       _state = TextFieldValidatorState.invalid(exception: ValidatorException.generalIsTooLong(tooLongText!));
     } else if (regex != null && !regex!.hasMatch(text)) {
       _state = TextFieldValidatorState.invalid(exception: ValidatorException.generalIsInvalid(regexText!));
-    } else if (await condition?.call(text) ?? false) {
+    } else if (condition != null && await condition!(text)) {
       _state = TextFieldValidatorState.invalid(exception: ValidatorException.generalIsInvalid(conditionText!));
     } else {
       _state = const TextFieldValidatorState.valid();
@@ -64,11 +64,7 @@ class TextValidatorControllerGeneral extends TextValidatorController {
     notifyListeners();
   }
 
-  bool isValid() {
-    return _state is TextFieldValidatorStateValid;
-  }
+  bool get isValid => _state is TextFieldValidatorStateValid;
 
-  bool isInvalid() {
-    return _state is TextFieldValidatorStateInvalid;
-  }
+  bool get isInvalid => _state is TextFieldValidatorStateInvalid;
 }

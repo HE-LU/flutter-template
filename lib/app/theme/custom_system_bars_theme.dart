@@ -28,7 +28,7 @@ class CustomSystemBarsTheme {
     final brightness = providerContainer.read(themeModeNotifierProvider.notifier).brightness;
 
     await _setupSystemBarsUpdateCallback(providerContainer: providerContainer);
-    await _setSystemBarsTheme(brightness: brightness);
+    _setSystemBarsTheme(brightness: brightness);
   }
 
   static SystemUiOverlayStyle getSystemBarsTheme({required Brightness brightness}) {
@@ -41,8 +41,8 @@ class CustomSystemBarsTheme {
     }
   }
 
-  static Future<void> _setSystemBarsTheme({required Brightness brightness}) async {
-    SystemChrome.setSystemUIOverlayStyle((getSystemBarsTheme(brightness: brightness)));
+  static void _setSystemBarsTheme({required Brightness brightness}) {
+    SystemChrome.setSystemUIOverlayStyle(getSystemBarsTheme(brightness: brightness));
   }
 
   static SystemUiOverlayStyle _getAndroidSystemBarsTheme({required Brightness brightness}) {
@@ -84,7 +84,7 @@ class CustomSystemBarsTheme {
       originalCallback?.call();
       final themeMode = await providerContainer.read(themeModeNotifierProvider.future);
       if (themeMode == ThemeMode.system) {
-        await _setSystemBarsTheme(brightness: PlatformDispatcher.instance.platformBrightness);
+        _setSystemBarsTheme(brightness: PlatformDispatcher.instance.platformBrightness);
       }
     };
 
@@ -96,7 +96,7 @@ class CustomSystemBarsTheme {
           if (msg == AppLifecycleState.resumed.toString()) {
             final themeMode = await providerContainer.read(themeModeNotifierProvider.future);
             if (themeMode == ThemeMode.system) {
-              await _setSystemBarsTheme(brightness: PlatformDispatcher.instance.platformBrightness);
+              _setSystemBarsTheme(brightness: PlatformDispatcher.instance.platformBrightness);
             }
           }
           return Future.value(msg);
