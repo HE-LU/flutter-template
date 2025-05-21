@@ -25,7 +25,7 @@ class CustomAlertDialog {
   final VoidCallback? negativeAction;
 
   Future<bool?> show() async {
-    return await showDialog<bool>(
+    return showDialog<bool>(
       context: context,
       builder: (builderContext) => CustomDialogWrapper.alert(
         context: builderContext,

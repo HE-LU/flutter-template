@@ -3,9 +3,9 @@ import 'package:flutter_app/common/extension/build_context.dart';
 
 class CustomTabBar extends StatelessWidget {
   const CustomTabBar({
+    required this.tabs,
     super.key,
     this.tabController,
-    required this.tabs,
     this.onTap,
   });
 

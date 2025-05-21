@@ -19,7 +19,7 @@ class DebugToolsListDialog {
   final void Function(String listItem) onItemSelect;
 
   Future<bool?> show() async {
-    return await showDialog<bool>(
+    return showDialog<bool>(
       context: context,
       builder: (builderContext) => CustomDialogWrapper.custom(
         context: builderContext,
@@ -30,7 +30,7 @@ class DebugToolsListDialog {
             shrinkWrap: true,
             itemCount: list.length,
             separatorBuilder: (context, index) => Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8),
               child: Container(height: 1, color: context.colorScheme.divider),
             ),
             itemBuilder: (context, index) {

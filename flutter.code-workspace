@@ -192,7 +192,7 @@
     "todohighlight.isCaseSensitive": true,
     "todohighlight.keywords": [
       {
-        "text": " TODO: ",
+        "text": " TODO(",
         "color": "#a8c023",
         "isWholeLine": true,
         "backgroundColor": "rgba(0,0,0,0)"
@@ -227,6 +227,11 @@
         "isWholeLine": true,
         "backgroundColor": "rgba(0,0,0,0)"
       }
+    ],
+    "cSpell.words": [
+      "Buildless",
+      "Refreshable",
+      "usecase"
     ]
   }
 }
