@@ -114,10 +114,7 @@ Future<void> _setupFirebaseCrashlytics() async {
         final dynamic error = pair[0];
         final stack = pair[1] as StackTrace;
 
-        await CrashlyticsManager.logCritical(
-          error,
-          stack: stack,
-        );
+        await CrashlyticsManager.logCritical(error, stack: stack);
       } else {
         // Optionally log or handle unexpected message format
         Flogger.e('Unexpected error message format from isolate: $pair');
