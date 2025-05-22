@@ -375,7 +375,7 @@ To be able to use the firebase provider for Apple login, we need to do some conf
 - Create a Service ID - this is the service that would provide sign in with apple. `Developer -> Certificates, Identifiers & Profiles -> Identifiers -> Create new -> Services IDs`
     (note: to get into services there is a filter on Identifiers screen on right top where you can switch from identifiers to services.)
     - Description will be visible to our users - e.g. Template
-    - Identifier - can be app/bundle ID `com.strv.flutter.template.develop` or simply `flutter-template-develop`
+    - Identifier - can be app/bundle ID `cz.helu.flutter.template.develop` or simply `flutter-template-develop`
     - Enable Sign in with Apple for the service 
         - Domains is url of your page e.g. `template.com`
         - Return URL is crucial part - this will be taken from Firebase: Authentication -> Sign-in method -> Apple -> callback URL

@@ -1,4 +1,4 @@
-package com.strv.flutter.template;
+package cz.helu.flutter.template;
 
 import androidx.test.platform.app.InstrumentationRegistry;
 import org.junit.Test;

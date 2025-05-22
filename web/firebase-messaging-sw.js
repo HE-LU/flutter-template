@@ -3,9 +3,9 @@ importScripts("https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js")
 
 firebase.initializeApp({
     apiKey: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-    authDomain: 'strv-flutter-template.firebaseapp.com',
-    projectId: 'strv-flutter-template',
-    storageBucket: 'strv-flutter-template.appspot.com',
+    authDomain: 'helu-flutter-template.firebaseapp.com',
+    projectId: 'helu-flutter-template',
+    storageBucket: 'helu-flutter-template.appspot.com',
     messagingSenderId: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     appId: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     measurementId: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',

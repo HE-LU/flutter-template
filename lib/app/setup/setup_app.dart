@@ -77,9 +77,9 @@ Future<void> _setupFirebase({required Flavor flavor}) async {
       // TODO(HELU): Replace with actual values. Can be found inside Firebase -> Project Settings, under Web App
       options: const FirebaseOptions(
         apiKey: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-        authDomain: 'strv-flutter-template.firebaseapp.com',
-        projectId: 'strv-flutter-template',
-        storageBucket: 'strv-flutter-template.appspot.com',
+        authDomain: 'helu-flutter-template.firebaseapp.com',
+        projectId: 'helu-flutter-template',
+        storageBucket: 'helu-flutter-template.appspot.com',
         messagingSenderId: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
         appId: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
         measurementId: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
@@ -154,11 +154,11 @@ Future<void> _setupRASP({required Flavor flavor}) async {
 
   final config = TalsecConfig(
     isProd: flavor == Flavor.production && !kDebugMode,
-    watcherMail: 'lukas.hermann@strv.com',
+    watcherMail: 'hermann@helu.cz',
 
     /// For Android
     androidConfig: AndroidConfig(
-      packageName: 'com.strv.flutter.template',
+      packageName: 'cz.helu.flutter.template',
       // signingCertHashes: list of hashes of the certificates of the keys which were used to sign the application.
       // At least one hash value must be provided. Hashes which are passed here must be encoded in Base64 form
       // https://github.com/talsec/Free-RASP-Community/wiki/Getting-your-signing-certificate-hash-of-app
@@ -170,7 +170,7 @@ Future<void> _setupRASP({required Flavor flavor}) async {
 
     /// For iOS
     iosConfig: IOSConfig(
-      bundleIds: ['com.strv.flutter.template'],
+      bundleIds: ['cz.helu.flutter.template'],
       teamId: 'M8AK35...',
     ),
   );

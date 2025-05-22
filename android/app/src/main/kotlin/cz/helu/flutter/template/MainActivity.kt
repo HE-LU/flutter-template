@@ -1,4 +1,4 @@
-package com.strv.flutter.template
+package cz.helu.flutter.template
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 

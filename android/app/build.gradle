@@ -41,7 +41,7 @@ android {
     compileSdkVersion compileAndroidSdkVersion
     ndkVersion flutter.ndkVersion
     flavorDimensions "env"
-    namespace "com.strv.flutter.template"
+    namespace "cz.helu.flutter.template"
 
     compileOptions {
         coreLibraryDesugaringEnabled true

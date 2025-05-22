@@ -114,9 +114,9 @@ dev_dependencies:
 patrol:
   app_name: flutter_app
   android:
-    package_name: com.strv.flutter.template
+    package_name: cz.helu.flutter.template
   ios:
-    bundle_id: com.strv.flutter.template
+    bundle_id: cz.helu.flutter.template
 
 
 flutter_gen:

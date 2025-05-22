@@ -442,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.flutter.template.develop;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.helu.flutter.template.develop;
 				PRODUCT_NAME = "[DEV] Template";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -527,7 +527,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.flutter.template.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.helu.flutter.template.staging;
 				PRODUCT_NAME = "[STG] Template";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -610,7 +610,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.flutter.template.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.helu.flutter.template.staging;
 				PRODUCT_NAME = "[STG] Template";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -690,7 +690,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.flutter.template.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.helu.flutter.template.staging;
 				PRODUCT_NAME = "[STG] Template";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -775,7 +775,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.flutter.template;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.helu.flutter.template;
 				PRODUCT_NAME = Template;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -858,7 +858,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.flutter.template;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.helu.flutter.template;
 				PRODUCT_NAME = Template;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -938,7 +938,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.flutter.template;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.helu.flutter.template;
 				PRODUCT_NAME = Template;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1075,7 +1075,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.flutter.template.develop;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.helu.flutter.template.develop;
 				PRODUCT_NAME = "[DEV] Template";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1106,7 +1106,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.flutter.template.develop;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.helu.flutter.template.develop;
 				PRODUCT_NAME = "[DEV] Template";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
