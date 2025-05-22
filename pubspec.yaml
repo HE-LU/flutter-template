@@ -108,7 +108,7 @@ dev_dependencies:
   riverpod_lint: 2.6.5
 
   # UI Tests
-  patrol: 3.15.1
+  patrol: 3.15.2
 
 
 patrol:
