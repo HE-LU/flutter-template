@@ -13,7 +13,7 @@ class CustomRadioButtonGroup<T> extends StatelessWidget {
 
   final Map<T, String> options;
   final T? selectedOption;
-  final void Function(T) onOptionSelected;
+  final ValueChanged<T> onOptionSelected;
 
   @override
   Widget build(BuildContext context) {

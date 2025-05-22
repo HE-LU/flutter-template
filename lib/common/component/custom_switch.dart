@@ -14,7 +14,7 @@ class CustomSwitch extends StatelessWidget {
 
   final String title;
   final bool value;
-  final void Function(bool value) onChanged;
+  final ValueChanged<bool> onChanged;
   final String? subtitle;
   final bool dense;
 

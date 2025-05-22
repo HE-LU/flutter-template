@@ -16,7 +16,7 @@ class DebugToolsListDialog {
   final BuildContext context;
   final String title;
   final List<String> list;
-  final void Function(String listItem) onItemSelect;
+  final ValueChanged<String> onItemSelect;
 
   Future<bool?> show() async {
     return showDialog<bool>(

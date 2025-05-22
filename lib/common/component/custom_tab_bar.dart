@@ -11,7 +11,7 @@ class CustomTabBar extends StatelessWidget {
 
   final TabController? tabController;
   final List<Tab> tabs;
-  final void Function(int)? onTap;
+  final ValueChanged<int>? onTap;
 
   @override
   Widget build(BuildContext context) {
